@@ -64,7 +64,7 @@ class Scraper():
 
         file = open("opgg.csv", "w", newline="")
         wr = csv.writer(file)
-        wr.writerow(["Rank", "Name", "Tier", "LP"])
+        wr.writerow(["Rank", "Tier", "LP", "Name"])
         file.close()
 
         for i in range(5):
