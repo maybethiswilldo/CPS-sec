@@ -53,12 +53,12 @@ class Scraper():
 
         self.writeCSV(userRank, userTier, userLP, userName)
 
-    def writeCSV(self, rank, name, tier, lp):
+    def writeCSV(self, rank, tier, lp, name):
         file = open("opgg.csv", "a", encoding='UTF-8', newline="")
 
         wr = csv.writer(file)
         for i in range(len(rank)):
-            wr.writerow([rank[i], name[i], tier[i], lp[i]])
+            wr.writerow([rank[i], tier[i], lp[i], name[i]])
 
     def scrap(self):
 
