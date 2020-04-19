@@ -1,3 +1,5 @@
+# 온라인게임 전적검색 사이트인 op.gg에서 LOL 한국 서버의 랭킹을 1~500위까지 받아오는 크롤러입니다.
+
 import requests
 from bs4 import BeautifulSoup
 import csv
